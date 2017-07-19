@@ -1,0 +1,516 @@
+/* hack reset (for production, use Yahoo! reset CSS)
+*************************/
+
+*
+{
+	margin: 0;
+	padding: 0;
+}
+
+/* body
+*************************/
+
+body
+{
+	font: 14px/21px Georgia, serif;
+	color: #370707;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    margin-right: 520px;
+    margin-left: 520px;
+}
+
+/* links
+*************************/
+
+a:link, a:visited, a:hover, a:active
+{
+	text-decoration: none;
+}
+
+/* inline elements
+*************************/
+
+strong
+{
+	font-weight: bold;
+}
+
+/* tabs
+*************************/
+
+ul.tabs
+{
+	display: table;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	position: relative;
+}
+
+ul.tabs li
+{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	display: table-cell;
+	float: left;
+	position: relative;
+}
+
+ul.tabs a
+{
+	position: relative;
+	display: block;
+}
+
+/* dropdowns
+*************************/
+
+ul.dropdown
+{
+	margin: 0;
+	padding: 0;
+	display: block;
+	position: absolute;
+	z-index: 999;
+	top: 100%;
+	width: 250px;
+	display: none;
+	left: 0;
+}
+
+ul.dropdown ul.dropdown
+{
+	top: 0;
+	left: 95%;
+}
+
+ul.dropdown li
+{
+	margin: 0;
+	padding: 0;
+	float: none;
+	position: relative;
+	list-style: none;
+	display: block;
+}
+
+ul.dropdown li a
+{
+	display: block;
+}
+
+
+/* menu-specifc
+*************************/
+
+#menu
+{
+	position: fixed;
+	z-index: 5;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 40px;
+	line-height: 40px;
+	background: #ffb35a url(#) repeat-x;
+	border-bottom: 1px solid #000;
+}
+
+#menu ul
+{
+	margin: 0 auto;
+}
+
+#menu ul li.hasmore
+{
+	background: url(#) no-repeat center 27px;
+}
+
+#menu ul li h4
+{
+	margin: 0;
+}
+
+#menu ul li h4 a
+{
+	font-size: 14px;
+	color: #000;
+	font-weight: bold;
+	padding: 0 15px;
+}
+
+#menu ul li a
+{
+	color: #9b2021;
+	padding-left: 4px;
+}
+
+#menu ul li a img
+{
+	vertical-align: middle;
+}
+
+#menu ul li a:hover
+{
+	background: url(#) top left no-repeat;
+}
+
+#menu ul li a span
+{
+	display: block;
+	padding: 0 15px 0 11px;
+}
+
+#menu ul li a:hover span
+{
+	background: url(#) top right;
+}
+/*THIS IS THE DROPDOWN ITSELF, BACKGROUND COLOR ETC.*/
+#menu ul.dropdown
+{
+	padding: 10px;
+	background-color:#ffbb11;
+	overflow:hidden;
+	border-bottom: 1px solid #dc902f;
+	width: 290px;
+}
+
+#menu ul.dropdown li a
+{
+	border-bottom: 1px solid #e5cd8e;
+	line-height: 30px;
+	overflow: hidden;
+	height: 30px;
+}
+
+#menu ul.dropdown li.last a
+{
+	border-bottom-width: 0;
+}
+
+#menu ul.dropdown li a:hover
+{
+	background-color: #ffbb11;
+}
+/*This is the color when you hover over the clickable items in the dropdown*/
+#menu ul li h4 a:hover
+{
+	background-color: #ffbb11;
+}
+.searchbar {
+  display: inline-block;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  padding: 10px 20px;
+  border: 5px solid #b7b7b7;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  font: normal 16px/normal "Times New Roman", Times, serif;
+  color: rgba(0,142,198,1);
+  -o-text-overflow: clip;
+  text-overflow: clip;
+  background: rgba(252,252,252,1);
+  -webkit-box-shadow: 2px 2px 2px 0 rgba(0,0,0,0.2) inset;
+  box-shadow: 2px 2px 2px 0 rgba(0,0,0,0.2) inset;
+  text-shadow: 1px 1px 0 rgba(255,255,255,0.66) ;
+  -webkit-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+  -moz-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+  -o-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+  transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+  -webkit-transform: rotateX(1.1459155902616465deg) rotateY(1.1459155902616465deg)   ;
+  transform: rotateX(1.1459155902616465deg) rotateY(1.1459155902616465deg)   ;
+}
+
+.searchbar:hover {
+  border: 1px solid #b7b7b7;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  -webkit-transform: none;
+  transform: none;
+}
+
+.searchbar:focus {
+}
+.button {
+  display: inline-block;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  cursor: pointer;
+  padding: 10px 20px;
+  border: 2px solid #018dc4;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  font: normal 16px/normal "Times New Roman", Times, serif;
+  color: #33E3FF;
+  -o-text-overflow: clip;
+  text-overflow: clip;
+  background: #0199d9;
+  -webkit-box-shadow: 2px 2px 2px 0 rgba(0,0,0,0.2) ;
+  box-shadow: 2px 2px 2px 0 rgba(0,0,0,0.2) ;
+  text-shadow: -1px -1px 0 rgba(15,73,168,0.66) ;
+  -webkit-transition: all 300ms cubic-bezier(0.68, -0.75, 0.265, 1.75);
+  -moz-transition: all 300ms cubic-bezier(0.68, -0.75, 0.265, 1.75);
+  -o-transition: all 300ms cubic-bezier(0.68, -0.75, 0.265, 1.75);
+  transition: all 300ms cubic-bezier(0.68, -0.75, 0.265, 1.75);
+  -webkit-transform: rotateX(1.1459155902616465deg) rotateY(1.1459155902616465deg)   ;
+  transform: rotateX(1.1459155902616465deg) rotateY(1.1459155902616465deg)   ;
+}
+
+.button:hover {
+  border: 1px solid #018dc4;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  -webkit-transition: all 300ms cubic-bezier(0.42, 0, 0.58, 1);
+  -moz-transition: all 300ms cubic-bezier(0.42, 0, 0.58, 1);
+  -o-transition: all 300ms cubic-bezier(0.42, 0, 0.58, 1);
+  transition: all 300ms cubic-bezier(0.42, 0, 0.58, 1);
+  -webkit-transform: none;
+  transform: none;
+}
+.footer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  background-color: #ADADAD;
+  text-align: center;
+}
+.button:active {
+}
+/* Style all font awesome icons */
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+    opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+/* Twitter */
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+.fa-instagram {
+    background: #FF5733;
+    color: white;
+}
+.fa-snapchat {
+    background: #F7FF00;
+    color: white;
+}
+.rb-grid {
+  list-style: none;
+  text-align: center;
+  margin: 0 auto;
+}
+.rb-grid li {
+  width: 24%;
+  height: 15em;
+  margin: 0.5%;
+  background: #8CC7DF;
+  color: #fff;
+  display: block;
+  float: left;
+  padding: 1.6em;
+  cursor: pointer;
+  position: relative;
+}
+.rb-grid li.rb-span-2 {
+  width: 49%;
+}
+
+.rb-grid li.rb-span-4 {
+  width: 99%;
+}
+.rb-grid li h3 {
+  font-size: 2.6em;
+  font-weight: 100;
+}
+.rb-grid li[class^="icon-"]:before,
+.rb-grid li[class*=" icon-"]:before {
+  font-size: 10em;
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  line-height: 3;
+  opacity: 0.4;
+  text-align: right;
+  pointer-events: none;
+}
+.rb-temp {
+  display: block;
+  font-size: 2em;
+  opacity: 0.5;
+  transition: all 0.3s ease-in-out;
+}
+.rb-grid li:hover .rb-temp {
+  opacity: 1;
+}
+.rb-overlay {
+  opacity: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: all 0.4s ease;
+  z-index: -1;
+  pointer-events: none;
+  cursor: default;
+}
+.rb-close {
+  position: absolute;
+  top: 0.4em;
+  right: 0.4em;
+  width: 2em;
+  height: 2em;
+  text-indent: -9000px;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+.rb-close:before {
+  content: 'x';
+  font-weight: 100;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  font-size: 3em;
+  line-height: 0.6;
+  text-align: center;
+  text-indent: 0px;
+}
+.rb-week {
+  width: 100%;
+  height: 100%;
+}
+.rb-week > div {
+  width: 10%;
+  height: 100%;
+  float: left;
+  position: relative;
+  padding: 3% 0;
+}
+
+.rb-week > div:first-child {
+  width: 30%;
+}
+.rb-week span {
+  padding: 5% 0;
+  font-size: 2em;
+  font-weight: 100;
+  display: block;
+  margin: auto 0;
+  height: 30%;
+  width: 100%;
+  line-height: 0.8;
+}
+.rb-week span.rb-city {
+  font-weight: 700;
+  padding: 1% 10%;
+  font-size: 1em;
+  line-height: 1.2;
+}
+.rb-week [class^="icon-"]:before {
+  font-size: 2.5em;
+  font-weight: normal;
+}
+.rb-week > div:first-child [class^="icon-"] {
+  opacity: 0.1;
+}
+.rb-grid li:nth-child(1) { background: #3399CC; }
+.rb-grid li:nth-child(2) { background: #33CCCC; }
+.rb-grid li:nth-child(3) { background: #996699; }
+.rb-grid li:nth-child(4) { background: #C24747; }
+.rb-grid li:nth-child(5) { background: #e2674a; }
+.rb-grid li:nth-child(6) { background: #FFCC66; }
+.rb-grid li:nth-child(7) { background: #99CC99; }
+.rb-grid li:nth-child(8) { background: #669999; }
+.rb-grid li:nth-child(9) { background: #CC6699; }
+.rb-grid li:nth-child(10) { background: #339966; }
+.rb-grid li:nth-child(11) { background: #666699; }
+.rb-grid li:nth-child(1) .rb-week > div:nth-child(1) { background: #3399CC; }
+.rb-grid li:nth-child(1) .rb-week > div:nth-child(2) { background: #2D87B4; }
+.rb-grid li:nth-child(1) .rb-week > div:nth-child(3) { background: #297AA3; }
+.rb-grid li:nth-child(1) .rb-week > div:nth-child(4) { background: #256E93; }
+.rb-grid li:nth-child(1) .rb-week > div:nth-child(5) { background: #216283; }
+.rb-grid li:nth-child(1) .rb-week > div:nth-child(6) { background: #1D5672; }
+.rb-grid li:nth-child(1) .rb-week > div:nth-child(7) { background: #184962; }
+.rb-grid li:nth-child(1) .rb-week > div:nth-child(8) { background: #143D52; }
+
+.rb-grid li:nth-child(2) .rb-week > div:nth-child(1) { background: #33CCCC; }
+.rb-grid li:nth-child(2) .rb-week > div:nth-child(2) { background: #2DB4B4; }
+.rb-grid li:nth-child(2) .rb-week > div:nth-child(3) { background: #29A3A3; }
+.rb-grid li:nth-child(2) .rb-week > div:nth-child(4) { background: #259393; }
+.rb-grid li:nth-child(2) .rb-week > div:nth-child(5) { background: #218383; }
+.rb-grid li:nth-child(2) .rb-week > div:nth-child(6) { background: #1D7272; }
+.rb-grid li:nth-child(2) .rb-week > div:nth-child(7) { background: #186262; }
+.rb-grid li:nth-child(2) .rb-week > div:nth-child(8) { background: #145252; }
+@media screen and (max-width: 63.125em) {
+  
+  .rb-grid li,
+  .rb-grid li.rb-span-2,
+  .rb-grid li.rb-span-4 {
+    width: 100%;
+    height: 10em;
+    text-align: left;
+  }
+
+  .rb-grid li[class^="icon-"]:before,
+  .rb-grid li[class*=" icon-"]:before {
+    font-size: 6em;
+    left: auto;
+    right: 0;
+    line-height: 2.5;
+  }
+
+  .rb-grid li > div {
+    text-align: center;
+  }
+}
+html,
+body {
+   margin:0;
+   padding:0;
+   height:100%;
+}
+#container {
+   min-height:100%;
+   position:relative;
+ }
+#footer {
+   position:absolute;
+   bottom:0;
+   width:100%;
+   height:60px;   /* Height of the footer */
+   background:#6cf;
+}
+#container {
+   height:100%;
+}
